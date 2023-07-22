@@ -8,7 +8,8 @@ export default function Home() {
       <Header />
 
       <Carousel />
-      <div>
+
+      <div className="mt-32">
         <h1>Slider2</h1>
       </div>
       <Footer />

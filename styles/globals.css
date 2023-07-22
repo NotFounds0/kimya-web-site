@@ -6,3 +6,20 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #f5f5f5;
 }
+
+.slick-dots {
+  @apply !flex !items-center justify-center;
+}
+.slick-dots li {
+  @apply !flex justify-start !items-center;
+}
+.slick-dots div{
+  @apply -translate-x-1/2
+}
+.slick-dots .slick-active div {
+  @apply bg-orange-700 !h-full !w-full transition-all;
+}
+
+.slick-dots div {
+  @apply bg-gray-600;
+}
