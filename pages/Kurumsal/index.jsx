@@ -16,7 +16,7 @@ const Kurumsal = () => {
       <YerBelirt title={"Kurumsal"} desc={"Anasayfa / Kurumsal"} />
 
       <div className="md:flex  justify-center md:px-20 items-center mt-5 md:justify-between">
-        <div className="relative md:w-[400px] w-full h-[300px]">
+        <div className="relative md:w-[600px] w-full h-[300px]">
           <Image alt="" src={"/img/resimSlider.png"} fill objectFit="cover" />
         </div>
         <div>

@@ -1,6 +1,7 @@
 import Footer from "@/components/Layout/Footer";
 import Header from "@/components/Layout/Header";
 import Carousel from "@/components/ui/Carousel";
+import Product from "@/components/ui/Product";
 import Head from "next/head";
 import Image from "next/image";
 import { AiFillAppstore } from "react-icons/ai";
@@ -98,6 +99,41 @@ export default function Home() {
         </div>
       </div>
       {/*  */}
+
+      {/* Product */}
+      <div className="mt-10">
+        <h1 className="border-b border-blue-600 text-2xl font-bold text-center">
+          Ürünlerimiz
+        </h1>
+        <div className="flex flex-wrap justify-center gap-10 mt-10">
+          <Product
+            img={"/img/sliderFoto.jpg"}
+            title={"DENEME ÜRÜN 0614"}
+            desc={"Kaliteli ürünler deneme"}
+          />
+          <Product
+            img={"/img/sliderFoto.jpg"}
+            title={"DENEME ÜRÜN 0614"}
+            desc={"Kaliteli ürünler deneme"}
+          />
+          <Product
+            img={"/img/sliderFoto.jpg"}
+            title={"DENEME ÜRÜN 0614"}
+            desc={"Kaliteli ürünler deneme"}
+          />
+          <Product
+            img={"/img/sliderFoto.jpg"}
+            title={"DENEME ÜRÜN 0614"}
+            desc={"Kaliteli ürünler deneme"}
+          />
+          <Product
+            img={"/img/sliderFoto.jpg"}
+            title={"DENEME ÜRÜN 0614"}
+            desc={"Kaliteli ürünler denemesss"}
+          />
+        </div>
+      </div>
+      {/* Product END */}
 
       {/* Referanslar */}
       <div className="md:px-32 mt-20">

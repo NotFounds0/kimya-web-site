@@ -97,9 +97,7 @@ const Header = () => {
               <Link href="/iletisim">İletişim</Link>
             </li>
           </ul>
-          <button className="md:hidden flex" onClick={() => setNav(!nav)}>
-            <RxHamburgerMenu />
-          </button>
+          <button className="md:hidden flex bg-blue-600 p-2 rounded-lg text-white" onClick={() => setNav(!nav)}><RxHamburgerMenu/></button>
         </div>
       </div>
     </>
