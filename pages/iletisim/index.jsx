@@ -13,7 +13,7 @@ const iletisim = () => {
       <Header />
       <YerBelirt title={"İletişim"} desc={"Anasayfa / İletişim"} />
       <div>
-
+            
       </div>
       <Footer />
     </>

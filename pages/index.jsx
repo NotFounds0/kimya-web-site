@@ -7,46 +7,55 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-    <Head>
+      <Head>
         <title>AEM Kimya - Anasayfa</title>
-    </Head>
-      <Header />
-      <Carousel />
-      <div>
-        <div className="md:px-20">
-          <div className="flex flex-col items-center justify-center mt-20 text-center">
-            <h1 className="text-3xl text-black">Lorem, ipsum dolor.</h1>
+      </Head>
 
-            <p className="text-[#777] md:w-[600px] w-auto">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-              sapiente tempore facilis omnis quas porro vitae. Nobis earum
-              tempore inventore?
+      {/* Header */}
+      <Header />
+      {/* Header END */}
+
+      {/* Slider */}
+      <Carousel />
+      {/* Slider END */}
+
+      {/* Özellikler */}
+      <div className="md:px-20 space-y-3">
+        <div className="flex flex-col items-center justify-center mt-20 text-center">
+          <h1 className="text-3xl text-black">Lorem, ipsum dolor.</h1>
+
+          <p className="text-[#777] md:w-[600px] w-auto">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            sapiente tempore facilis omnis quas porro vitae. Nobis earum tempore
+            inventore?
+          </p>
+        </div>
+        <div className="md:flex items-center justify-center gap-4">
+          <div className="text-center">
+            <h1 className="text-2xl">Lorem, ipsum.</h1>
+            <p className="text-[#777] lg:w-[300px] w-auto">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+              dolorem.
             </p>
           </div>
-          <div className="md:flex items-center justify-center gap-4">
-            <div className="text-center">
-              <h1 className="text-2xl">Lorem, ipsum.</h1>
-              <p className="text-[#777] lg:w-[300px] w-auto">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Delectus, dolorem.
-              </p>
-            </div>
-            <div className="text-center">
-              <h1 className="text-2xl ">Lorem, ipsum dolor.</h1>
-              <p className="text-[#777] lg:w-[300px] w-auto">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-            <div className="text-center">
-              <h1 className="text-2xl">Lorem ipsum dolor sit.</h1>
-              <p className="text-[#777] lg:w-[300px] w-auto">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repudiandae?
-              </p>
-            </div>
+          <div className="text-center">
+            <h1 className="text-2xl ">Lorem, ipsum dolor.</h1>
+            <p className="text-[#777] lg:w-[300px] w-auto">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div className="text-center">
+            <h1 className="text-2xl">Lorem ipsum dolor sit.</h1>
+            <p className="text-[#777] lg:w-[300px] w-auto">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae?
+            </p>
           </div>
         </div>
       </div>
+      {/* Özellikler END */}
+
+      {/*  */}
       <div className="bg-blue-800 w-full h-[300px] mt-20 md:flex items-center justify-center gap-10">
         <div className="text-center">
           <h1 className="text-white md:text-5xl text-2xl">0</h1>
@@ -73,6 +82,9 @@ export default function Home() {
           </p>
         </div>
       </div>
+      {/*  */}
+
+      {/* Referanslar */}
       <div className="md:px-32 mt-20">
         <h1 className="text-center md:text-2xl font-bold font-mono">
           Referanslar
@@ -95,7 +107,11 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* Referans END */}
+
+      {/* Footer */}
       <Footer />
+      {/* Footer END */}
     </>
   );
 }
