@@ -17,11 +17,11 @@ const Header = () => {
     <>
       <div className="bg-[#eee] w-full md:h-[45px] px-32 md:flex justify-between items-center hidden">
         <div className="flex md:gap-10 gap-3">
-          <a href="#" className="flex items-center gap-1 md:text-lg text-sm">
+          <a href="#" className="flex items-center gap-1 md:text-[15px] text-sm">
             <HiMail /> info@aemkimya.com
           </a>
           <span className="border border-black"></span>
-          <a href="#" className="flex items-center gap-1 md:text-lg text-sm">
+          <a href="#" className="flex items-center gap-1 md:text-[15px] text-sm">
             <BiSolidPhone /> 000000000
           </a>
         </div>

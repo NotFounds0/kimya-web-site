@@ -26,27 +26,42 @@ const urun = () => {
           <Product
             img={"/img/sliderFoto.jpg"}
             title={"DENEME ÜRÜN 0614"}
-            desc={"Kaliteli ürünler deneme"}
+            desc={"Ürünleri"}
           />
           <Product
             img={"/img/sliderFoto.jpg"}
             title={"DENEME ÜRÜN 0614"}
-            desc={"Kaliteli ürünler deneme"}
+            desc={"Ürünleri"}
           />
           <Product
             img={"/img/sliderFoto.jpg"}
             title={"DENEME ÜRÜN 0614"}
-            desc={"Kaliteli ürünler deneme"}
+            desc={"Ürünleri"}
           />
           <Product
             img={"/img/sliderFoto.jpg"}
             title={"DENEME ÜRÜN 0614"}
-            desc={"Kaliteli ürünler deneme"}
+            desc={"Ürünleri"}
           />
           <Product
             img={"/img/sliderFoto.jpg"}
             title={"DENEME ÜRÜN 0614"}
-            desc={"Kaliteli ürünler denemesss"}
+            desc={"Ürünleri"}
+          />
+          <Product
+            img={"/img/sliderFoto.jpg"}
+            title={"DENEME ÜRÜN 0614"}
+            desc={"Ürünleri"}
+          />
+          <Product
+            img={"/img/sliderFoto.jpg"}
+            title={"DENEME ÜRÜN 0614"}
+            desc={"Ürünleri"}
+          />
+          <Product
+            img={"/img/sliderFoto.jpg"}
+            title={"DENEME ÜRÜN 0614"}
+            desc={"Ürünleri"}
           />
         </div>
       </div>

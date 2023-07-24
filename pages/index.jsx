@@ -4,6 +4,7 @@ import Carousel from "@/components/ui/Carousel";
 import Product from "@/components/ui/Product";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { AiFillAppstore } from "react-icons/ai";
 import { MdOutlineSentimentSatisfiedAlt } from "react-icons/md";
 import { TbTruckDelivery } from "react-icons/tb";
@@ -71,65 +72,57 @@ export default function Home() {
       </div>
       {/* Özellikler END */}
 
-      {/*  */}
-      <div className="bg-blue-600 w-full h-[200px] mt-20 md:flex items-center justify-center gap-10">
-        <div className="text-center">
-          <h1 className="text-white md:text-5xl text-2xl">0</h1>
-          <p className="text-white md:text-3xl text-xl font-bold">
-            Deneyimli Çalışan
-          </p>
-        </div>
-        <div className="text-center">
-          <h1 className="text-white md:text-5xl text-2xl">0</h1>
-          <p className="text-white md:text-3xl text-xl font-bold">
-            Mutlu Müşteri
-          </p>
-        </div>
-        <div className="text-center">
-          <h1 className="text-white md:text-5xl text-2xl">0</h1>
-          <p className="text-white md:text-3xl text-xl font-bold">
-            xxx xxxx deneme
-          </p>
-        </div>
-        <div className="text-center">
-          <h1 className="text-white md:text-5xl text-2xl">0</h1>
-          <p className="text-white md:text-3xl text-xl font-bold">
-            aaa xxaaaxx deneme
-          </p>
-        </div>
-      </div>
-      {/*  */}
-
       {/* Product */}
       <div className="mt-10">
-        <h1 className="border-b border-blue-600 text-2xl font-bold text-center">
+        <h1 className="border-b border-blue-600 text-2xl font-bold flex flex-col items-center text-center">
           Ürünlerimiz
+          <p className="text-sm md:w-[400px] w-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+            facilis ratione fugiat corrupti, nihil sapiente!
+          </p>
         </h1>
         <div className="flex flex-wrap justify-center gap-10 mt-10">
+          <Link href={'/Urun'}>
+            <Product
+              img={"/img/sliderFoto.jpg"}
+              title={"Gıda"}
+              desc={"Ürünleri"}
+            />
+          </Link>
           <Product
             img={"/img/sliderFoto.jpg"}
-            title={"DENEME ÜRÜN 0614"}
-            desc={"Kaliteli ürünler deneme"}
+            title={"Tarım"}
+            desc={"Ürünleri"}
           />
           <Product
             img={"/img/sliderFoto.jpg"}
-            title={"DENEME ÜRÜN 0614"}
-            desc={"Kaliteli ürünler deneme"}
+            title={"Tekstil"}
+            desc={"Ürünleri"}
           />
           <Product
             img={"/img/sliderFoto.jpg"}
-            title={"DENEME ÜRÜN 0614"}
-            desc={"Kaliteli ürünler deneme"}
+            title={"ENDÜSTRİYEL"}
+            desc={"Ürünleri"}
           />
           <Product
             img={"/img/sliderFoto.jpg"}
-            title={"DENEME ÜRÜN 0614"}
-            desc={"Kaliteli ürünler deneme"}
+            title={"Kozmetik"}
+            desc={"Ürünlerisss"}
           />
           <Product
             img={"/img/sliderFoto.jpg"}
-            title={"DENEME ÜRÜN 0614"}
-            desc={"Kaliteli ürünler denemesss"}
+            title={"genel deri"}
+            desc={"Ürünlerisss"}
+          />
+          <Product
+            img={"/img/sliderFoto.jpg"}
+            title={"Deterjan"}
+            desc={"Ürünlerisss"}
+          />
+          <Product
+            img={"/img/sliderFoto.jpg"}
+            title={"Yapı"}
+            desc={"Ürünlerisss"}
           />
         </div>
       </div>
