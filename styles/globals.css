@@ -12,13 +12,13 @@ body {
 .slick-dots li {
   @apply !flex justify-start !items-center;
 }
-.slick-dots div{
-  @apply -translate-x-1/2
+.slick-dots div {
+  @apply -translate-x-1/2;
 }
 .slick-dots .slick-active div {
-  @apply bg-orange-700 !h-full !w-full transition-all;
+  @apply bg-blue-600 !h-full !w-full transition-all;
 }
 
 .slick-dots div {
-  @apply bg-gray-600;
+  @apply bg-[#777];
 }
