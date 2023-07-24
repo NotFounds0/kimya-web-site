@@ -37,7 +37,7 @@ const iletisim = () => {
               />
             </label>
           </div>
-          <label for="message" className="block text-gray-700 font-bold mb-2">
+          <label className="block text-gray-700 font-bold mb-2">
             Mesajınız
           </label>
           <textarea
@@ -46,6 +46,16 @@ const iletisim = () => {
             className="w-full px-4 py-2 border border-gray-500 rounded-lg focus:outline-none focus:ring focus:border-blue-300"
             placeholder="Buraya mesajınızı girin..."
           ></textarea>
+        </div>
+        <button className="bg-blue-600 px-5 py-1 text-white">Gönder</button>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1530.7054857988328!2d32.8646243!3d39.8874301!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f85729b4f8b%3A0xb9e08ade8f7c59ca!2zw4dhbmtheWEgS8O2xZ9rw7w!5e0!3m2!1str!2str!4v1690205950086!5m2!1str!2str"
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="md:w-[600px] h-[500px] w-full"
+          ></iframe>
         </div>
       </div>
       <Footer />
