@@ -8,12 +8,12 @@ import React from "react";
 const Kurumsal = () => {
   return (
     <>
-    <Head>
+      <Head>
         <title>AEM Kimya - Kurumsal</title>
-    </Head>
+      </Head>
       <Header />
 
-     <YerBelirt title={'Kurumsal'} desc={'Anasayfa / Kurumsal'}/>
+      <YerBelirt title={"Kurumsal"} desc={"Anasayfa / Kurumsal"} />
 
       <div className="md:flex  justify-center md:px-20 items-center mt-5 md:justify-between">
         <div className="relative md:w-[400px] w-full h-[300px]">
@@ -55,8 +55,8 @@ const Kurumsal = () => {
         </div>
       </div>
       <br />
-      <div className="border border-blue-800"></div>
-      <div className="lg:flex items-center mt-10 text-center bg-blue-700 lg:h-[150px] h-full">
+      <div className="border border-blue-600"></div>
+      <div className="lg:flex items-center mt-10 text-center bg-blue-600 lg:h-[150px] h-full">
         <div className="">
           <h1 className="text-white text-xl font-bold">Vizyon</h1>
           <p className="xl:w-[700px] w-auto md:px-20 text-sm text-gray-300">
@@ -76,7 +76,7 @@ const Kurumsal = () => {
           </p>
         </div>
       </div>
-      <div className=" flex flex-col items-center mt-10 text-center">
+      <div className=" flex flex-col items-center mt-12 pb-6 text-center">
         <h1>Değerlerimiz</h1>
         <p className="md:w-[700px] w-auto md:px-20 text-sm text-gray-600">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
