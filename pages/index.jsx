@@ -3,6 +3,9 @@ import Header from "@/components/Layout/Header";
 import Carousel from "@/components/ui/Carousel";
 import Head from "next/head";
 import Image from "next/image";
+import { AiFillAppstore } from "react-icons/ai";
+import {MdOutlineSentimentSatisfiedAlt} from 'react-icons/md'
+import {TbTruckDelivery} from 'react-icons/tb'
 
 export default function Home() {
   return (
@@ -22,7 +25,7 @@ export default function Home() {
       {/* Özellikler */}
       <div className="md:px-20 space-y-3">
         <div className="flex flex-col items-center justify-center mt-20 text-center">
-          <h1 className="text-3xl text-black">Lorem, ipsum dolor.</h1>
+          <h1 className="text-3xl font-bold tracking-widest">AEM Kimya.</h1>
 
           <p className="text-[#777] md:w-[600px] w-auto">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
@@ -32,23 +35,27 @@ export default function Home() {
         </div>
         <div className="md:flex items-center justify-center gap-4">
           <div className="text-center">
-            <h1 className="text-2xl">Lorem, ipsum.</h1>
+          <button className="text-3xl bg-blue-800 text-white p-3 rounded-full"><TbTruckDelivery/></button>
+            <h1 className="text-2xl">Hızlı Teslimat.</h1>
             <p className="text-[#777] lg:w-[300px] w-auto">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
               dolorem.
             </p>
           </div>
           <div className="text-center">
-            <h1 className="text-2xl ">Lorem, ipsum dolor.</h1>
+            <button className="text-3xl bg-blue-800 text-white p-3 rounded-full"><MdOutlineSentimentSatisfiedAlt/></button>
+            <h1 className="text-2xl ">Müşteri memnuniyeti.</h1>
             <p className="text-[#777] lg:w-[300px] w-auto">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+              dolorem.
             </p>
           </div>
           <div className="text-center">
-            <h1 className="text-2xl">Lorem ipsum dolor sit.</h1>
+          <button className="text-3xl bg-blue-800 text-white p-3 rounded-full"><AiFillAppstore/></button>
+            <h1 className="text-2xl">Kaliteli Ürünler.</h1>
             <p className="text-[#777] lg:w-[300px] w-auto">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+              dolorem.
             </p>
           </div>
         </div>

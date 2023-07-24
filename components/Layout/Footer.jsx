@@ -6,7 +6,7 @@ function Footer() {
   const date = new Date();
   return (
     <>
-      <footer className="bg-gray-800 text-white md:flex justify-between md:h-[300px] items-center lg:px-20 md:px-10">
+      <footer className="bg-gray-800 mt-5 text-white md:flex justify-between md:h-[300px] items-center lg:px-20 md:px-10">
         <div className="text-center">
           <h3 className="text-xl font-semibold">Hakkımızda</h3>
           <p className="text-gray-300 md:w-[300px] w-auto text-sm md:text-base px-3 md:px-0">

@@ -24,13 +24,13 @@ const Carousel = () => {
   return (
     <div>
         <Slider {...settings}>
-          <div className='relative w-full h-[450px]'>
+          <div className='relative w-full h-[500px]'>
             <Image alt='' src={'/img/sliderFoto.jpg'} fill/>
           </div>
-          <div className='relative w-full h-[450px]'>
+          <div className='relative w-full h-[500px]'>
             <Image alt='' src={'/img/sliderFoto.jpg'} fill/>
           </div>
-          <div className='relative w-full h-[450px]'>
+          <div className='relative w-full h-[500px]'>
             <Image alt='' src={'/img/sliderFoto.jpg'} fill/>
           </div>
         </Slider>
