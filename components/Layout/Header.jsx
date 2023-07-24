@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { HiMail } from "react-icons/hi";
 import { BiLogoFacebook, BiLogoLinkedin, BiSolidPhone } from "react-icons/bi";
 import {
@@ -6,17 +6,22 @@ import {
   AiOutlineLinkedin,
   AiOutlineTwitter,
 } from "react-icons/ai";
+import Link from "next/link";
+import {RxHamburgerMenu} from 'react-icons/rx'
+import { useRouter } from "next/router";
 
 const Header = () => {
+  const router = useRouter();
+  const [nav, setNav] = useState(false)
   return (
     <>
-      <div className="bg-[#eee] w-full h-[45px] px-32 flex justify-between items-center">
-        <div className="flex gap-10">
-          <a href="#" className="flex items-center gap-1">
+      <div className="bg-[#eee] w-full md:h-[45px] px-32 md:flex justify-between items-center hidden">
+        <div className="flex md:gap-10 gap-3">
+          <a href="#" className="flex items-center gap-1 md:text-lg text-sm">
             <HiMail /> info@aemkimya.com
           </a>
           <span className="border border-black"></span>
-          <a href="#" className="flex items-center gap-1">
+          <a href="#" className="flex items-center gap-1 md:text-lg text-sm">
             <BiSolidPhone /> 000000000
           </a>
         </div>
@@ -47,23 +52,24 @@ const Header = () => {
           </a>
         </div>
       </div>
-      <div className="bg-white w-full h-[100px] px-32 flex items-center justify-between border-b">
-        <h1 className="text-2xl font-bold font-mono">AEM Kimya</h1>
+      <div className="bg-white w-full h-[100px] md:px-32 px-5 flex items-center justify-between border-b">
+        <h1 className="md:text-2xl font-bold font-mono">AEM Kimya</h1>
         <div>
-          <ul className="flex gap-10">
-            <li className="text-[15px]">
-              <a href="#">Anasayfa</a>
+          <ul className={`md:flex md:static absolute top-[100px] left-0 md:bg-transparent bg-white w-full z-50 text-center gap-3 ${nav ? '' : 'hidden'}`}>
+            <li className={`${router.asPath === '/' ? 'md:text-[15px] md:border-[0px] border-b border-blue-200 p-1 md:p-0 text-blue-600 font-bold underline underline-offset-4' : 'md:text-[15px] md:border-[0px] border-b border-blue-200 p-1 md:p-0'}`}>
+              <Link href="/">Anasayfa</Link>
             </li>
-            <li className="text-[15px]">
-              <a className="cursor-pointer">Ürünler</a>
+            <li className={`${router.asPath === '/Urun' ? 'md:text-[15px] md:border-[0px] border-b border-blue-200 p-1 md:p-0 text-blue-600 font-bold underline underline-offset-4' : 'md:text-[15px] md:border-[0px] border-b border-blue-200 p-1 md:p-0'}`}>
+              <Link href={'/Urun'}>Ürünler</Link>
             </li>
-            <li className="text-[15px]">
-              <a className="cursor-pointer">Kurumsal</a>
+            <li className={`${router.asPath === '/Kurumsal' ? 'md:text-[15px] md:border-[0px] border-b border-blue-200 p-1 md:p-0 text-blue-600 font-bold underline underline-offset-4' : 'md:text-[15px] md:border-[0px] border-b border-blue-200 p-1 md:p-0'}`}>
+              <Link href="/Kurumsal">Kurumsal</Link>
             </li>
-            <li className="text-[15px]">
-              <a href="#">İletişim</a>
+            <li className={`${router.asPath === '/iletisim' ? 'md:text-[15px] p-1 md:p-0 text-blue-600 font-bold underline underline-offset-4' : 'md:text-[15px] p-1 md:p-0'}`}>
+              <Link href="/iletisim">İletişim</Link>
             </li>
           </ul>
+          <button className="md:hidden flex" onClick={() => setNav(!nav)}><RxHamburgerMenu/></button>
         </div>
       </div>
     </>
