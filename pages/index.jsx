@@ -107,19 +107,19 @@ export default function Home() {
           <Product
             img={"/img/kozmetik.jpg"}
             title={"Kozmetik"}
-            desc={"Ürünlerisss"}
+            desc={"Ürünleri"}
           />
           <Product
             img={"/img/deri.jpg"}
             title={"genel deri"}
-            desc={"Ürünlerisss"}
+            desc={"Ürünleri"}
           />
           <Product
             img={"/img/deterjan.jpg"}
             title={"Deterjan"}
-            desc={"Ürünlerisss"}
+            desc={"Ürünleri"}
           />
-          <Product img={"/img/yapı.jpg"} title={"Yapı"} desc={"Ürünlerisss"} />
+          <Product img={"/img/yapı.jpg"} title={"Yapı"} desc={"Ürünleri"} />
         </div>
       </div>
       {/* Product END */}
