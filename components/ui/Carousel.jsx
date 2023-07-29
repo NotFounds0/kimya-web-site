@@ -24,14 +24,14 @@ const Carousel = () => {
   return (
     <div>
       <Slider {...settings}>
-        <div className="relative w-full h-[500px]">
-          <Image alt="" src={"/img/foto11.jpg"} fill />
+        <div className="relative w-full md:h-[400px] h-[200px]">
+          <Image alt="" src={"/img/foto11.jpg"} fill objectFit="cover" />
         </div>
-        <div className="relative w-full h-[500px]">
-          <Image alt="" src={"/img/foto12.jpg"} fill />
+        <div className="relative w-full md:h-[400px] h-[200px]">
+          <Image alt="" src={"/img/foto12.jpg"} fill objectFit="cover" />
         </div>
-        <div className="relative w-full h-[500px]">
-          <Image alt="" src={"/img/foto13.jpg"} fill />
+        <div className="relative w-full md:h-[400px] h-[200px]">
+          <Image alt="" src={"/img/foto13.jpg"} fill objectFit="cover" />
         </div>
       </Slider>
     </div>

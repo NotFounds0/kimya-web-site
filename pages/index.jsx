@@ -31,7 +31,7 @@ export default function Home() {
             AEM Kimya.
           </h1>
 
-          <p className="text-[#777] md:w-[600px] w-auto">
+          <p className="text-[#777] md:w-[600px] w-auto px-10 md:px-0">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
             sapiente tempore facilis omnis quas porro vitae. Nobis earum tempore
             inventore?
@@ -43,7 +43,7 @@ export default function Home() {
               <TbTruckDelivery />
             </button>
             <h1 className="text-2xl">Hızlı Teslimat.</h1>
-            <p className="text-[#777] lg:w-[300px] w-auto">
+            <p className="text-[#777] lg:w-[300px] w-auto px-3 md:px-0">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
               dolorem.
             </p>
@@ -53,7 +53,7 @@ export default function Home() {
               <MdOutlineSentimentSatisfiedAlt />
             </button>
             <h1 className="text-2xl ">Müşteri memnuniyeti.</h1>
-            <p className="text-[#777] lg:w-[300px] w-auto">
+            <p className="text-[#777] lg:w-[300px] w-auto px-3 md:px-0">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
               dolorem.
             </p>
@@ -63,7 +63,7 @@ export default function Home() {
               <AiFillAppstore />
             </button>
             <h1 className="text-2xl">Kaliteli Ürünler.</h1>
-            <p className="text-[#777] lg:w-[300px] w-auto">
+            <p className="text-[#777] lg:w-[300px] w-auto px-3 md:px-0">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
               dolorem.
             </p>
@@ -74,14 +74,14 @@ export default function Home() {
 
       {/* Product */}
       <div className="mt-10">
-        <h1 className="border-b border-blue-600 text-2xl font-bold flex flex-col items-center text-center">
+        <h1 className="border-b border-blue-600 text-2xl font-bold flex flex-col items-center text-center py-3">
           Ürünlerimiz
           <p className="text-sm md:w-[400px] w-auto">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
             facilis ratione fugiat corrupti, nihil sapiente!
           </p>
         </h1>
-        <div className="flex flex-wrap justify-center gap-10 mt-10">
+        <div className="flex flex-wrap justify-center gap-10 mt-5">
           <Link href={"/Urun/Gida"}>
             <Product img={"/img/gıda.jpg"} title={"Gıda"} desc={"Ürünleri"} />
           </Link>
@@ -126,7 +126,7 @@ export default function Home() {
 
       {/* Referanslar */}
       <div className="md:px-32 mt-20">
-        <h1 className="text-center md:text-2xl font-bold font-mono">
+        <h1 className="text-center md:text-2xl font-bold font-mono py-2">
           Referanslar
         </h1>
         <div className="flex flex-wrap justify-center gap-10  border-t border-blue-700">
