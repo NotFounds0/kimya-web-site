@@ -82,7 +82,7 @@ export default function Home() {
           </p>
         </h1>
         <div className="flex flex-wrap justify-center gap-10 mt-10">
-          <Link href={'/Urun'}>
+          <Link href={'/Urun/Gida'}>
             <Product
               img={"/img/sliderFoto.jpg"}
               title={"Gıda"}
