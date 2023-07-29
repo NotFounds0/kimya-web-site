@@ -82,48 +82,44 @@ export default function Home() {
           </p>
         </h1>
         <div className="flex flex-wrap justify-center gap-10 mt-10">
-          <Link href={'/Urun/Gida'}>
+          <Link href={"/Urun/Gida"}>
+            <Product img={"/img/mısır1.jpg"} title={"Gıda"} desc={"Ürünleri"} />
+          </Link>
+          <Link href={"/Urun/Tarim"}>
             <Product
-              img={"/img/sliderFoto.jpg"}
-              title={"Gıda"}
+              img={"/img/tarım1.jpg"}
+              title={"Tarım"}
+              desc={"Ürünleri"}
+            />
+          </Link>
+          <Link href={"/Urun/Tekstil"}>
+            <Product
+              img={"/img/tekstil1.jpg"}
+              title={"Tekstil"}
               desc={"Ürünleri"}
             />
           </Link>
           <Product
-            img={"/img/sliderFoto.jpg"}
-            title={"Tarım"}
-            desc={"Ürünleri"}
-          />
-          <Product
-            img={"/img/sliderFoto.jpg"}
-            title={"Tekstil"}
-            desc={"Ürünleri"}
-          />
-          <Product
-            img={"/img/sliderFoto.jpg"}
+            img={"/img/fabrika.jpg"}
             title={"ENDÜSTRİYEL"}
             desc={"Ürünleri"}
           />
           <Product
-            img={"/img/sliderFoto.jpg"}
+            img={"/img/kozmetik.jpg"}
             title={"Kozmetik"}
             desc={"Ürünlerisss"}
           />
           <Product
-            img={"/img/sliderFoto.jpg"}
+            img={"/img/deri.jpg"}
             title={"genel deri"}
             desc={"Ürünlerisss"}
           />
           <Product
-            img={"/img/sliderFoto.jpg"}
+            img={"/img/deterjan.jpg"}
             title={"Deterjan"}
             desc={"Ürünlerisss"}
           />
-          <Product
-            img={"/img/sliderFoto.jpg"}
-            title={"Yapı"}
-            desc={"Ürünlerisss"}
-          />
+          <Product img={"/img/yapı.jpg"} title={"Yapı"} desc={"Ürünlerisss"} />
         </div>
       </div>
       {/* Product END */}

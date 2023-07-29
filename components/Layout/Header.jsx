@@ -17,11 +17,17 @@ const Header = () => {
     <>
       <div className="bg-[#eee] w-full md:h-[45px] px-32 md:flex justify-between items-center hidden">
         <div className="flex md:gap-10 gap-3">
-          <a href="#" className="flex items-center gap-1 md:text-[15px] text-sm">
+          <a
+            href="#"
+            className="flex items-center gap-1 md:text-[15px] text-sm"
+          >
             <HiMail /> info@aemkimya.com
           </a>
           <span className="border border-black"></span>
-          <a href="#" className="flex items-center gap-1 md:text-[15px] text-sm">
+          <a
+            href="#"
+            className="flex items-center gap-1 md:text-[15px] text-sm"
+          >
             <BiSolidPhone /> 000000000
           </a>
         </div>
@@ -69,7 +75,7 @@ const Header = () => {
             >
               <Link href="/">Anasayfa</Link>
             </li>
-            <li
+            {/* <li
               className={`${
                 router.asPath === "/Urun"
                   ? "md:text-[15px] md:border-[0px] border-b border-blue-200 p-1 md:p-0 text-blue-600 font-bold underline underline-offset-4"
@@ -77,7 +83,7 @@ const Header = () => {
               }`}
             >
               <Link href={"/Urun"}>Ürünler</Link>
-            </li>
+            </li> */}
             <li
               className={`${
                 router.asPath === "/Kurumsal"
@@ -97,7 +103,12 @@ const Header = () => {
               <Link href="/iletisim">İletişim</Link>
             </li>
           </ul>
-          <button className="md:hidden flex bg-blue-600 p-2 rounded-lg text-white" onClick={() => setNav(!nav)}><RxHamburgerMenu/></button>
+          <button
+            className="md:hidden flex bg-blue-600 p-2 rounded-lg text-white"
+            onClick={() => setNav(!nav)}
+          >
+            <RxHamburgerMenu />
+          </button>
         </div>
       </div>
     </>
