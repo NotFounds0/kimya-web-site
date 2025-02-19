@@ -1,3 +1,7 @@
+# İlgili Görseller
+![kimya-web-site vercel app_](https://github.com/user-attachments/assets/705cd72e-b1a5-4f73-bacf-b9704a84d1ab)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
